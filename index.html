@@ -24,6 +24,17 @@
         <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
     </head>
+    <script>
+        document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'document/resume.pdf'; // Adjust the path accordingly
+    link.download = 'Noor-E-Alam_Siddiki_6_years_resume.pdf'; // The name the file will be saved as
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+    </script>
     <body>
         <div class="content-block" id="header">
             <div id="overlay-1">
@@ -58,10 +69,13 @@
                     <div class="container">
                         <h1 class="pro-name">Web <!-- <span style="color: #71b644;" > -->Developer<!-- </span> --></h1>
                         <p class="tagline">Bring your dreams to life</p>
+                        
                         <div class="skills">
 
                         </div>  <!-- skills -->
                         <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
+                        <button id="downloadResumeBtn" class="btn btn-primary">Download Resume</button>
+
                     </div>  <!-- container -->
                 </div>  <!-- middle -->
                 
