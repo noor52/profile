@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-    	<title>Developer</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    	<!-- meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.theme.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/main.css">
-
-		<!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-    </head>
-    <script>
-        document.getElementById('downloadResumeBtn').addEventListener('click', function() {
-    const link = document.createElement('a');
-    link.href = 'document/resume.pdf'; // Adjust the path accordingly
-    link.download = 'Noor-E-Alam_Siddiki_6_years_resume.pdf'; // The name the file will be saved as
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-
-    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet" type="text/css">
+</head>
     <body>
         <div class="content-block" id="header">
             <div id="overlay-1">
@@ -1380,6 +1367,17 @@
 				})
 			});
         </script>
+        <script>
+            document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+                const link = document.createElement('a');
+                link.href = 'document/resume.pdf'; // Adjust the path accordingly
+                link.download = 'Noor-E-Alam_Siddiki_6_years_resume.pdf'; // The name the file will be saved as
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+    </body>
 
 	</body>
 </html>
