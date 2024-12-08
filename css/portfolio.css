@@ -1,0 +1,14 @@
+<style>
+/* Initially hidden with transition effect */
+#portfolio2 .isotope.portfolio-items {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the portfolio items on hover */
+#portfolio2:hover .isotope.portfolio-items {
+    opacity: 1;
+    visibility: visible;
+}
+</style>
